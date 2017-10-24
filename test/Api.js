@@ -24,9 +24,9 @@ describe("Connection", () => {
     // });
 
 
-    it("Connect to Openledger", function() {
+    it("Connect to GrapheneLab", function() {
         return new Promise( function(resolve) {
-            Apis.instance("wss://bitshares.openledger.info/ws", true).init_promise.then(function (result) {
+            Apis.instance("ws://karma.graphenelab.org:8090", true).init_promise.then(function (result) {
                 coreAsset = result[0].network.core_asset;
                 assert(coreAsset === "BTS");
                 resolve();
@@ -68,7 +68,7 @@ describe("Connection reset", () => {
 
 describe("Api", () => {
 
-    let cs = "wss://bitshares.openledger.info/ws";
+    let cs = "ws://karma.graphenelab.org:8090";
 
 
     // after(function() {

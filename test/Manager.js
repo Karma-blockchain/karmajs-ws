@@ -1,10 +1,10 @@
 import assert from "assert";
 import { Manager } from "../lib";
 
-var defaultUrl = "wss://bitshares.openledger.info/ws";
-defaultUrl = "wss://dexnode.net/ws";
+var defaultUrl = "ws://karma.graphenelab.org:8090";
+defaultUrl = "ws://karma.graphenelab.org:8090";
 var faultyNodeList = [
-    {url: "wss://bitsqsdqsdhares.openledger.info/ws", location: "Nuremberg, Germany"},
+    {url: "ws://karma.graphenelab.org:8090", location: "Nuremberg, Germany"},
     {url: "wss://bitazdazdshares.openledger.info/ws", location: "Nuremberg, Germany"},
     {url: "wss://bitshaazdzares.openledger.info/ws", location: "Nuremberg, Germany"},
     {url: "wss://bit.btzadazdsabc.org/ws", location: "Hong Kong"},
