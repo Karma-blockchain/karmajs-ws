@@ -15,7 +15,6 @@
     "build-es": "BABEL_ENV=es babel ./lib -d es",
     "postbuild": "npm run browserify && npm run build-es",
     "prepublish": "npm run build",
-    "postinstall": "npm run build",
     "browserify": "NODE_ENV=production browserify cjs/src/ApiInstances.js --standalone karma_ws -o build/karmajs-ws.js -d",
     "postbrowserify": "NODE_ENV=production uglifyjs --compress --mangle --sequences --drop_console --mangle-props --screw-ie8 --output build/karmajs-ws.min.js -- build/karmajs-ws.js"
   },
@@ -38,18 +37,16 @@
   "main": "cjs/index.js",
   "jsnext:main": "es/index.js",
   "dependencies": {
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-preset-es2015": "^6.18.0",
-    "babel-preset-stage-1": "^6.16.0",
-    "ReconnectingWebSocket": "git+https://github.com/bitshares/reconnecting-websocket#master",
-    "ws": "^2.2.0"
-  },
-  "devDependencies": {
     "assert": "^1.3.0",
     "babel-cli": "^6.18.0",
     "babel-core": "^6.21.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-1": "^6.16.0",
     "browserify": "^13.0.1",
+    "ReconnectingWebSocket": "git+https://github.com/bitshares/reconnecting-websocket#master",
     "mocha": "^2.3.4",
-    "uglify-js": "^3.1.1"
+    "uglify-js": "^3.1.1",
+    "ws": "^2.2.0"
   }
 }
