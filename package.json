@@ -15,6 +15,7 @@
     "build-es": "BABEL_ENV=es babel ./lib -d es",
     "postbuild": "npm run browserify && npm run build-es",
     "prepublish": "npm run build",
+    "postinstall": "npm run build",
     "browserify": "NODE_ENV=production browserify cjs/src/ApiInstances.js --standalone karma_ws -o build/karmajs-ws.js -d",
     "postbrowserify": "NODE_ENV=production uglifyjs --compress --mangle --sequences --drop_console --mangle-props --screw-ie8 --output build/karmajs-ws.min.js -- build/karmajs-ws.js"
   },
