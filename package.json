@@ -1,6 +1,6 @@
 {
   "name": "karmajs-ws",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Pure JavaScript Karma/Graphene websocket interface for node.js and browsers.",
   "browser": {
     "ws": false
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GrapheneLab/karmajs-ws.git"
+    "url": "git+https://github.com/Karma-blockchain/karmajs-ws.git"
   },
   "author": "GrapheneLab",
   "contributors": [
@@ -29,7 +29,7 @@
   ],
   "license": "BSD-2-Clause-FreeBSD",
   "bugs": {
-    "url": "https://github.com/GrapheneLab/karmajs-ws/issues"
+    "url": "https://github.com/Karma-blockchain/karmajs-ws/issues"
   },
   "engines": {
     "node": ">= 6.0.0"
